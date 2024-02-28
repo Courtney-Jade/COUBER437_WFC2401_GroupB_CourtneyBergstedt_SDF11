@@ -1,0 +1,332 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cache Bank Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/css/leaflet.css">
+    <link rel="stylesheet" href="./assets/css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="mx-auto bg-white">
+    <div 
+        class="relative flex flex-wrap items-center justify-between w-full shrink-0">
+
+        <!--image-->
+    <div class="px-4"> 
+        <img class="h-8" src="cache-bank-logo.png">
+    </div>
+
+    <!--Navigation-->
+    <div class=" hidden md:flex items-center justify-between gap-12 text-black">
+        <a href="javascript:void(0)" class="text-sm font-bold text-dark-grey-700 hover:text-dark-grey-900">Product</a>
+        <a href="javascript:void(0)" class="text-sm font-bold text-dark-grey-700 hover:text-dark-grey-900">Features</a>
+        <a href="javascript:void(0)" class="text-sm font-bold text-dark-grey-700 hover:text-dark-grey-900">Get Started</a>
+        <a href="javascript:void(0)" class="text-sm font-bold text-dark-grey-700 hover:text-dark-grey-900">Contact</a>
+    </div>
+
+       <!--buttons-->
+       <div class="md:flex items-center gap-8">
+        <button class="flex items-center px-4 py-2 text-sm font-bold text-black rounded-xl hover:bg-green-500">
+            Log In</button>
+        <button class=" flex items-center px-4 py-2 text-sm font-bold text-white bg-pink-300 rounded-xl hover:bg-green-500">
+            Sign Up</button>
+    </div>
+
+    <!--toggle button-->
+    <button class="md:hidden" id="mobile-menu-toggle">
+        <svg
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="h-6 w-6"
+        fill="none"
+        >
+        <g clip-path="url(#clip0_429_11066)">
+          <path
+            d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+            stroke="#292929"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_429_11066">
+            <rect
+              width="24"
+              height="24"
+              fill="white"
+              transform="translate(0 0.000915527)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </button>
+
+
+    <div class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-4" id="mobile-menu">
+        <a href="javascript:void(0)" class="text-sm font-bold text-dark-grey-700 hover:text-dark-grey-900">Product</a>
+        <a href="javascript:void(0)" class="text-sm font-bold text-dark-grey-700 hover:text-dark-grey-900">Features</a>
+        <a href="javascript:void(0)" class="text-sm font-bold text-dark-grey-700 hover:text-dark-grey-900">Get Started</a>
+        <a href="javascript:void(0)" class="text-sm font-bold text-dark-grey-700 hover:text-dark-grey-900">Contact</a>
+    </div>
+    </div>
+
+  <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+    <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+         <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
+            The Clever Place to Keep Your Cache
+         </h1>
+         <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+            Cache Bank is designed exclusively for software developers.We understand your financial needs are as unique as the code you write.Our services offer cutting-edge financial solutions that help you take care of
+            your cash
+         </p>
+
+         <!--buttons-->
+         <div class="flex flex-col items-center gap-4 lg:flex-row">
+            <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-blue-700">Join Cache Now</button>
+            <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-blue-700">Join Our Discord Server</button>
+         </div>
+    </div>
+
+
+    <!--image-->
+    <div class="items-center justify-end hidden col-span-1 md:flex">
+         <img class="w-4/5 rounded-md" src="hero-image.png" alt="header image">
+    </div>
+ </section>
+
+ <!--endorsement section-->
+ <section class="w-full">
+      <div class="container flex flex-col items-center gap-8 mx-auto my-40">
+           <p class="text-center text-dark-black-600 font-semibold mb-10 text-2xl">
+            Endorsed by global companies
+           </p>
+
+           <div class="flex flex-wrap items-center justify center w-full gap-6 lg:gap-0 lg:flex-wrap lg:justify-between">
+                <img src="nike-logo.svg">
+                <img src="amazon-logo.svg">
+                <img src="minecraft-logo.svg">
+                <img src="steam-logo.svg">
+                <img src="notion-logo.svg">
+           </div>
+      </div>
+ </section>
+
+ <!--Features-->
+ <!--first div is the parent div-->
+ <div class="container mx-auto py-10 flex flex-col items-center justify-center">
+
+  <!--HEADER SECTION-->
+    <div class="flex flex-col items-center justify-center mt-12">
+
+      <h1 class="mb-4 text-3xl lg:text-4xl font-extrabold text-dark-grey-900 text-center">
+        Elevate Your Banking with Cache
+      </h1>
+      <p class="text-lg text-center lg:w-7/12 text-black-700">
+      We merge cutting-edge banking with a deep understanding of software
+      developers needs. Experience tailored financial solutions, advanced
+      security, and tech-focused support designed just for you.
+      </p>
+    </div>
+
+    <!--CARD SECTION-->
+    <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
+
+        <!--Card 1-->
+        <div 
+        class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-blue-200 transition duration-300">
+
+            <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
+               <img src="developer-focused-accounts.svg">
+            </div>
+
+            <div class="flex flex-col gap-2 text-center px-6">
+                <h4 class="text-2xl font-extrabold text-dark-grey-900">Developer-Focused Account Plans</h4>
+                <p class="font-medium text-black-700">
+                    Tailored accounts offering benefits like high-yield savings and
+                    exclusive investment options, designed specifically for software
+                    developers financial needs and career growth
+                </p>
+            </div>
+
+        </div>
+
+
+       <!--Card 2-->
+        <div  class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-blue-200 transition duration-300">
+
+            <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
+                <img src="advanced-online-banking.svg">
+            </div>
+
+            <div class="flex flex-col gap-2 text-center px-6">
+                <h4 class="text-2xl font-extrabold text-dark-grey-900">Advanced Online Banking Platforms</h4>
+                <p class="font-medium text-black-700">
+                    A cutting edge, intuitive online banking interface with features like
+                    API intergration, allowing developers to seamlessly manage finances
+                    alongside their coding projects.
+                </p>
+            </div>
+
+        </div>
+
+
+<!--Card 3-->
+        <div  class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-blue-200 transition duration-300">
+
+            <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
+                <img src="tech-savvy-customer.svg">
+            </div>
+
+            <div class="flex flex-col gap-2 text-center px-6">
+                <h4 class="text-2xl font-extrabold text-dark-grey-900">Tech-Savvy Customer Support</h4>
+                <p class="font-medium text-black-700">
+                   Expert support team with a deep understanding of the tech
+                   industry, providing relevant financial advice assistance
+                   specifically for software developers.
+                </p>
+            </div>
+
+        </div>
+
+
+<!--Card 4-->
+        <div  class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-blue-200 transition duration-300">
+
+            <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
+                <img src="high-level-security.svg">
+            </div>
+
+            <div class="flex flex-col gap-2 text-center px-6">
+                <h4 class="text-2xl font-extrabold text-dark-grey-900">High-Lvel Security Features</h4>
+                <p class="font-medium text-black-700">
+                    State-of-the-art cybersecurity measures, including multi-factor
+                    authentication and encryption, ensuring the safety of digital
+                    assets, which is crucial for tech professionals.
+                </p>
+            </div>
+
+        </div>
+
+
+<!--Card 5-->
+        <div  class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-blue-200 transition duration-300">
+
+            <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
+                <img src="innovative-financial-tools.svg">
+            </div>
+
+            <div class="flex flex-col gap-2 text-center px-6">
+                <h4 class="text-2xl font-extrabold text-dark-grey-900">Innovative Financial Tools</h4>
+                <p class="font-medium text-black-700">
+                    Access to unique financial tools and resources, like project
+                    funding accounts and tech startup investment opportunities,
+                    catering to the entrepreneurial spirit of developers.
+                </p>
+            </div>
+
+        </div>
+
+        
+<!--Card 6-->
+        <div  class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-blue-200 transition duration-300">
+
+            <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
+                <img src="community-networking-opps.svg">
+            </div>
+
+            <div class="flex flex-col gap-2 text-center px-6">
+                <h4 class="text-2xl font-extrabold text-dark-grey-900">Community and Networking Opportunities</h4>
+                <p class="font-medium text-black-700">
+                    Exclusive access to tech events, webinars, and a community
+                    platforms for networking and sharing insights
+                    within the software development industry.
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--End Of Card Section-->
+ </div>
+
+
+ <!--STATS-->
+ <div class="w-full">
+    <div class="container fex flex-col items-center gap-16 mx-auto my-32">
+         <div class="grid w-full grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-y-8">
+        <!--statistic blocks-->
+        <div class="flex flex-col items-center">
+             <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto1" countto="250">250</span>+</h3>
+             <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Hours saved sitting in the bank</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto2" countto="12">12</span>m</h3>
+            <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Cach Saved</p>
+       </div>
+
+       <div class="flex flex-col items-center">
+        <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto3" countto="2600" data-decimal="1">2.8</span>k+</h3>
+        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Global Partners</p>
+   </div>
+
+   <div class="flex flex-col items-center">
+    <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto4" countto="18000">18,000</span>+</h3>
+    <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Happy Developers</p>
+</div>
+
+         </div>
+    </div>
+</div>
+
+<!--GETTING STARTED-->
+<div class="w-full">
+    <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+         <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2">
+            <div class="bg-cover bg-center hidden lg:block rounded-3xl" style="background-image: url(&quot;assets/component-4/getting-started.png&quot;);">
+            </div>
+            <div class="flex flex-col gap-16">
+                <h2 class="text-3xl font-extrabold md:text-4xl lg:text-5xl text-dark-grey-900">How Cache Works?</h2>
+                <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: Sohne, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Go to Cache Bank, Click "Sign-Up" or "Open an Account"</span>
+                    Cache Bank simplifies sign-up with a user-friendly website
+                    streamlined account options,and an efficient verification process,
+                    making banking accessible and hassle-free for developers.
+                </p>
+            </div>
+            <div class="grid w-full grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-10">
+                 <div class="flex flex-col items-start gap-1">
+                      <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
+                        <span class="text-base font-bold leading-7 text-white">1</span>
+                      </div>
+                      <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: rgb(217, 217, 277); border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ;"></span></h3>
+                      <p class="text-base font-medium  leadinf-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: Sohne, ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot:, sans-serif, &quot;Helvetica Neue&quot;, Arial, &quot;Apple Color Emoji&quot;; &quot;Segoe UI Emoji&quot;,"></span></p>
+                 </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+
+    
+    <script>
+    document
+    .getElementById("mobile-menu-toggle")
+    .addEventListener("click", function() {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/maps.js"></script>
+    <script src="./assets/js/loopple/loopple.js"></script>
+</body>
